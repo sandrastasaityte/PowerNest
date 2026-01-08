@@ -1,0 +1,143 @@
+/* Footer.css */
+
+.footer {
+  background: #111;
+  color: #ddd;
+  margin-top: 40px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px 20px;
+}
+
+/* Brand */
+.footer-brand h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+}
+
+.footer-brand p {
+  margin: 8px 0 0;
+  max-width: 420px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* Links */
+.footer-links {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.footer-col h4 {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer-col a,
+.footer-col span {
+  display: block;
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.footer-col a:hover,
+.footer-col span:hover {
+  color: #fff;
+}
+
+/* Newsletter */
+.newsletter p {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.newsletter form {
+  display: flex;
+  gap: 8px;
+}
+
+.newsletter input {
+  flex: 1;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background: #000;
+  color: #fff;
+  padding: 0 12px;
+  outline: none;
+}
+
+.newsletter input::placeholder {
+  color: #666;
+}
+
+.newsletter button {
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 10px;
+  border: 0;
+  background: #fff;
+  color: #111;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.newsletter button:hover {
+  opacity: 0.85;
+}
+
+/* Bottom */
+.footer-bottom {
+  margin-top: 28px;
+  padding-top: 14px;
+  border-top: 1px solid #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  color: #888;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 14px;
+}
+
+.footer-legal span {
+  cursor: pointer;
+}
+
+.footer-legal span:hover {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

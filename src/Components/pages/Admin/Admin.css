@@ -1,0 +1,98 @@
+/* Admin.css */
+
+.admin {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+  background: #f8f8f8;
+}
+
+/* Sidebar */
+.admin-sidebar {
+  background: #111;
+  color: #fff;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.admin-logo {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+}
+
+/* Toggle */
+.admin-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Nav */
+.admin-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin-nav a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 12px;
+  border-radius: 10px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.admin-nav a:hover {
+  background: #222;
+  color: #fff;
+}
+
+.admin-nav a.active {
+  background: #fff;
+  color: #111;
+  font-weight: 900;
+}
+
+/* Content */
+.admin-content {
+  padding: 18px;
+  background: #fafafa;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .admin {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-sidebar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .admin-toggle {
+    display: inline-flex;
+  }
+
+  .admin:not(.open) .admin-nav {
+    display: none;
+  }
+}

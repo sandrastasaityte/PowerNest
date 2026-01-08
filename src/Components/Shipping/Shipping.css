@@ -1,0 +1,112 @@
+.info-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 16px 40px;
+}
+
+.info-card {
+  border: 1px solid #eee;
+  background: #fff;
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.info-card h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.info-card h2 {
+  margin-top: 18px;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.info-card p {
+  color: #444;
+  line-height: 1.6;
+}
+
+.muted {
+  color: #666;
+}
+
+.info-card ul,
+.info-card ol {
+  margin: 0;
+  padding-left: 18px;
+  color: #444;
+  line-height: 1.7;
+}
+
+.info-card li {
+  margin-bottom: 6px;
+}
+
+/* Contact layout */
+.contact-grid {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.contact-form {
+  border: 1px solid #f0f0f0;
+  border-radius: 16px;
+  padding: 14px;
+  background: #fafafa;
+}
+
+/* Field style (matches your other pages) */
+.field {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.field span {
+  font-size: 13px;
+  color: #666;
+}
+
+.field input,
+.field textarea {
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 11px 12px;
+  outline: none;
+  font-size: 14px;
+  background: #fff;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: #cfcfcf;
+}
+
+/* Button */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 14px;
+  border-radius: 12px;
+  border: 0;
+  background: #111;
+  color: #fff;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  opacity: 0.92;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

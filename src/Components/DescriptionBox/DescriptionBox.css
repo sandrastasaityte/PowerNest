@@ -1,0 +1,69 @@
+.desc-box {
+  margin-top: 24px;
+  border: 1px solid #eee;
+  border-radius: 18px;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* Tabs */
+.desc-tabs {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  background: #fafafa;
+}
+
+.desc-tabs button {
+  flex: 1;
+  padding: 14px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 14px;
+  color: #666;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.desc-tabs button:hover {
+  background: #f2f2f2;
+}
+
+.desc-tabs button.active {
+  background: #fff;
+  color: #111;
+  border-bottom: 2px solid #111;
+}
+
+/* Content */
+.desc-content {
+  padding: 16px;
+}
+
+.desc-text {
+  margin: 0;
+  color: #444;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* Features list */
+.desc-features {
+  margin: 0;
+  padding-left: 18px;
+  color: #444;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.desc-features li {
+  margin-bottom: 6px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .desc-tabs button {
+    font-size: 13px;
+    padding: 12px;
+  }
+}
